@@ -10,11 +10,11 @@ const ProductItem = ({product, className, onAdd}) => {
 
     return (
         <div className={'product ' + className}>
-            <div className={'img'}/>
+            <img src={product.image} alt={product.title} className={'img'} />
             <div className={'title'}>{product.title}</div>
             <div className={'description'}>{product.description}</div>
             <div className={'price'}>
-                <span>Вартість: <b>{product.price}</b></span>
+                <span>Вартість: <b>{product.price} грн</b></span>
             </div>
             <Button className={'add-btn'} onClick={onAddHandler}>
                 Додати у кошик
