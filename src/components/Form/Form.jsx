@@ -24,11 +24,11 @@ useEffect(() => {
     }
 }, [onSendData]);
 
- useEffect (() => {
+useEffect(() => {
     tg.MainButton.setParams({
         text: 'Відправити данні'
     })
- }, [])
+}, [])
 
  useEffect (() => {
     if (!name || !phone || !city) {
