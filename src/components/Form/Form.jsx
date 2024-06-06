@@ -39,24 +39,24 @@ useEffect(() => {
  }, [name,city,phone])
 
  const onChangeName = (e) =>{
-    setName(e.target.value);
+    setName(e.target.value)
  }
 
  const onChangePhone = (e) =>{
-    setPhone(e.target.value);
+    setPhone(e.target.value)
  }
 
  const onChangeCity = (e) =>{
-    setCity(e.target.value);
+    setCity(e.target.value)
  }
 
 
     return (
         <div className={"form"}>
             <h3>Введіть ваші данні</h3>
-            <input type="text" className={'input'} placeholder={"Ім'я"} value={name} onChange={onChangeName} required />
-            <input type="tel" className={'input'} placeholder={"Номер телефону"} value={phone} onChange={onChangePhone} pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
-            <input type="text" className={'input'} placeholder={"Місто"} value={city} onChange={onChangeCity} required />
+            <input type="text" className={'input'} placeholder={"Ім'я"} value={name} onChange={onChangeName} />
+            <input type="tel" className={'input'} placeholder={"Номер телефону"} value={phone} onChange={onChangePhone} pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  />
+            <input type="text" className={'input'} placeholder={"Місто"} value={city} onChange={onChangeCity}  />
         </div>
     );
 };
